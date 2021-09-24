@@ -1,0 +1,33 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+Scrapy = "*"
+scrapy-splash = "*"
+uwsgi = "*"
+ipython = "*"
+requests = "*"
+shub = "*"
+scrapy-crawlera = "*"
+jinja2 = "*"
+scrapyd = "*"
+scrapyd-client = "*"
+setuptools = "*"
+selenium = "==3.141.0"
+beautifulsoup4 = "==4.9.1"
+logparser = "*"
+python-dateutil = "==2.8.1"
+scrapy-zyte-smartproxy = "==2.1.0"
+google-api-python-client = "==2.13.0"
+google-auth-httplib2 = "==0.1.0"
+google-auth-oauthlib = "==0.4.4"
+botocore = "==1.21.7"
+
+
+[dev-packages]
+pre-commit = "==2.4.0"
+
+[requires]
+python_version = "3.8"
