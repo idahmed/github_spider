@@ -13,6 +13,6 @@ class S3FilesStore(S3FilesStore):
         uri = settings.get("FEED_URI")
         return S3FilesStore(uri)
 
-class MenuPipeline(object):
+class UserPipeline(object):
     def process_item(self, item, spider):
         return item

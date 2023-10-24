@@ -8,4 +8,4 @@ class BaseSpider(scrapy.Spider):
         super().__init__(**kwargs)
         self.download_delay = 0.25
         
-        self.rest_id = kwargs["rest_id"]
+        # self.rest_id = kwargs["rest_id"]

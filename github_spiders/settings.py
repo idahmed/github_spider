@@ -1,9 +1,9 @@
 import os
 
-BOT_NAME = "zdmenu_spiders"
+BOT_NAME = "github_spiders"
 
-SPIDER_MODULES = ["zdmenu_spiders.spiders"]
-NEWSPIDER_MODULE = "zdmenu_spiders.spiders"
+SPIDER_MODULES = ["github_spiders.spiders"]
+NEWSPIDER_MODULE = "github_spiders.spiders"
 
 
 USER_AGENT = (
@@ -16,7 +16,7 @@ FEED_FORMAT = "csv"
 FEED_EXPORT_ENCODING = "utf-8"
 FEED_STORE_EMPTY = False
 FEED_EXPORTERS = {
-    "jsonlines": "zdmenu_spiders.exporters.MenuExporter",
+    "jsonlines": "github_spiders.exporters.UserExporter",
 }
 
 # Enable to print all duplicate filter detected (for development/debug purposes)
@@ -36,7 +36,7 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 40
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    "zdmenu_spiders.pipelines.MenuPipeline": 300,
+    "github_spiders.pipelines.UserPipeline": 300,
 }
 
 # RETRY MIDDLEWARE

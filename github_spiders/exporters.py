@@ -1,5 +1,5 @@
 from scrapy.exporters import JsonLinesItemExporter
 
 
-class MenuExporter(JsonLinesItemExporter):
+class UserExporter(JsonLinesItemExporter):
     pass

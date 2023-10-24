@@ -1,10 +1,10 @@
 from scrapy.loader import ItemLoader
 from scrapy.loader.processors import Join, MapCompose
 
-from zdmenu_spiders.items import MenuItems
+from github_spiders.items import User
 
 
-class MenuItemsLoader(ItemLoader):
+class UserLoader(ItemLoader):
     default_input_processor = MapCompose(str)
     default_output_processor = Join(";")
-    default_item_class = MenuItems
+    default_item_class = User
